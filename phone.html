@@ -12,6 +12,34 @@
     <section>
         <H1>My name is Reshad</H1>
     </section>
+
+    <!-- Modal -->
+<section>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#phoneDetailModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="phoneDetailModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- display form -->
     <main>
     <section>
@@ -33,11 +61,18 @@
                     No phones Found .Please search new name.
                 </h4>
             </div>
-
+            
         </section>
 
+        <section>
+            <div id="show-all" class="text-center d-none" >
+                <button class="btn btn-primary">Show all</button>
+            </div>
+        </section>
+
+
         <!-- Adding a loading spinner -->
-        <section id="loader" >
+        <section id="loader" class="d-none" >
             <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
                 <div class="spinner-border  text-success" role="status">
                     <span class="visually-hidden">Loading...</span>
@@ -45,6 +80,10 @@
             </div>
         </section>
     </main>
+
+
+
+
 
     <!-- Footer section -->
     <hr>
