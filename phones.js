@@ -7,6 +7,11 @@ const loadPhone = (searchText) =>{
 const displayPhone = phones =>{
    const phoneContainer = document.getElementById('phones-container');
    phoneContainer.textContent = ''
+  // Commit 2
+  // Display 20 Phones Only
+  phones =phones.slice(0,20)
+
+
    phones.forEach(phone => {
     const phoneDiv = document.createElement('div');
     phoneDiv.classList.add('col');
