@@ -48,4 +48,5 @@ document.getElementById('btn-control').addEventListener('click',function(){
     loadPhone(searchText)
 })
 
-loadPhone()
+// loadPhone()
+// ata auto call korle oije auto no found dekha jay
